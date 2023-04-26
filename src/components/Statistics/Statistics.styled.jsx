@@ -11,8 +11,6 @@ export const ItemStyled = styled.li`
              return 'pink';
          case 'psd':
              return 'green';
-         case 'pdf':
-             return 'red';
          default:
              return 'red';
     }
