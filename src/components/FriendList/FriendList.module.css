@@ -1,0 +1,44 @@
+.list {
+    list-style: none;
+}
+
+.item {
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: solid 1px grey;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px grey;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: aliceblue;
+}
+
+.avatar {
+    border: solid 1px grey;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    box-shadow: 5px 3px 3px blanchedalmond;
+}
+
+.status {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: red;
+}
+
+.active {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    padding: 1px;
+}

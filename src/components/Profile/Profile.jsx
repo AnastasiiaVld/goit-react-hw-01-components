@@ -1,31 +1,51 @@
-export const Profile = () => {
-    return (
-        <div class="profile">
-  <div class="description">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-      alt="User avatar"
-      class="avatar"
-    />
-    <p class="name">Petra Marica</p>
-    <p class="tag">@pmarica</p>
-    <p class="location">Salvador, Brasil</p>
-  </div>
+import PropTypes from 'prop-types';
+import s from './Profile.module.css'
 
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">1000</span>
-    </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">2000</span>
-    </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">3000</span>
-    </li>
-  </ul>
-</div>
-    )
+export const Profile = ({ username, tag, location, avatar, stats }) => {
+
+  const userStates = [
+    {
+      label: 'Followers',
+      quantity: stats.followers
+    },
+    {
+      label: 'Views',
+      quantity: stats.views
+    },
+    {
+      label: 'Likes',
+      quantity: stats.likes
+    }
+  ];
+
+  return (
+    <div className={s.profile}>
+      <div className={s.description}>
+        <img
+          src={avatar}
+          alt="User avatar"
+          className={s.avatar}/>
+        <p className={s.name}>{username}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
+      </div>
+
+      <ul className={s.stats}>
+        {userStates.map(({ label, quantity }) =>
+          <li key={label} className={s.item}>
+            <span className={s.label}>{label} </span>
+            <span className={s.quantity}>{quantity}</span>
+          </li>
+        )}
+      </ul>
+    </div>
+  )
+};
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.shape({ followers:PropTypes.number, views:PropTypes.number, likes:PropTypes.number}),
 }
