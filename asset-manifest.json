@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AnastasiiaVld/goit-react-hw-01-components/static/css/main.7acaea2f.css",
-    "main.js": "/AnastasiiaVld/goit-react-hw-01-components/static/js/main.fb1b0591.js",
+    "main.css": "/AnastasiiaVld/goit-react-hw-01-components/static/css/main.0323685e.css",
+    "main.js": "/AnastasiiaVld/goit-react-hw-01-components/static/js/main.648ec2a4.js",
     "index.html": "/AnastasiiaVld/goit-react-hw-01-components/index.html",
-    "main.7acaea2f.css.map": "/AnastasiiaVld/goit-react-hw-01-components/static/css/main.7acaea2f.css.map",
-    "main.fb1b0591.js.map": "/AnastasiiaVld/goit-react-hw-01-components/static/js/main.fb1b0591.js.map"
+    "main.0323685e.css.map": "/AnastasiiaVld/goit-react-hw-01-components/static/css/main.0323685e.css.map",
+    "main.648ec2a4.js.map": "/AnastasiiaVld/goit-react-hw-01-components/static/js/main.648ec2a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.fb1b0591.js"
+    "static/css/main.0323685e.css",
+    "static/js/main.648ec2a4.js"
   ]
 }
