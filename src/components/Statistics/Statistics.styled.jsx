@@ -13,7 +13,7 @@ export const ItemStyled = styled.li`
              return 'green';
          case 'pdf':
              return 'red';
-         case 'default':
+         default:
              return 'red';
     }
     }
